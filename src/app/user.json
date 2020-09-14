@@ -1,0 +1,31 @@
+{
+  "userdata": [
+    {
+      "name": "Namrata Nilesh Nalawade",
+      "username": "aishpawar252@gmail.com",
+      "email": "namratanalawadennn@gmail.com",
+      "mobileno": 9130467573,
+      "password": "12345678",
+      "confirmpassword": "12345678",
+      "id": 1
+    },
+    {
+      "name": "Namrata Nilesh Nalawade",
+      "username": "namratanalawadennn@gmail.com",
+      "email": "namratanalawadennn@gmail.com",
+      "mobileno": 9130467573,
+      "password": "12345678",
+      "confirmpassword": "12345678",
+      "id": 2
+    },
+    {
+      "name": "Namrata Nilesh Nalawade",
+      "username": "aishpawar252@gmail.com",
+      "email": "namratanalawadennn@gmail.com",
+      "mobileno": 9130467573,
+      "password": "12345678",
+      "confirmpassword": "12345678",
+      "id": 3
+    }
+  ]
+}
