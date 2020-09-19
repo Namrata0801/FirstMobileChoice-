@@ -14,7 +14,8 @@ import { FooterComponent } from "../app/footer/footer.component";
 import{ PaymentComponent} from "../app/payment/payment.component";
 import{ CheckoutComponent} from "../app/checkout/checkout.component";
 import{ OrderplacedComponent } from "../app/orderplaced/orderplaced.component";
-
+import { FileuploadComponent } from "../app/fileupload/fileupload.component";
+import { DisplayimgComponent } from "../app/displayimg/displayimg.component";
 const routes: Routes = [
   {
     path:'',
@@ -70,6 +71,14 @@ const routes: Routes = [
   {
     path:'orderplaced',
     component: OrderplacedComponent
+  },
+  {
+    path:'fileupload',
+    component: FileuploadComponent
+  },
+  {
+    path:'displayingimg',
+    component: DisplayimgComponent
   }
   
 

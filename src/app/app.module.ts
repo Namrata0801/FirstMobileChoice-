@@ -26,6 +26,9 @@ import { CartItemComponent } from './cart/cart-item/cart-item.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { PaymentComponent } from './payment/payment.component';
 import { OrderplacedComponent } from './orderplaced/orderplaced.component';
+import { DashbordComponent } from './dashbord/dashbord.component';
+import { FileuploadComponent } from './fileupload/fileupload.component';
+import { DisplayimgComponent } from './displayimg/displayimg.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +48,10 @@ import { OrderplacedComponent } from './orderplaced/orderplaced.component';
     CartItemComponent,
     CheckoutComponent,
     PaymentComponent,
-    OrderplacedComponent
+    OrderplacedComponent,
+    DashbordComponent,
+    FileuploadComponent,
+    DisplayimgComponent
   ],
   imports: [
     BrowserModule,

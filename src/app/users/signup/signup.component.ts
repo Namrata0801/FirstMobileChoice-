@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from "@angular/forms";
-import { UserService  } from "src/app/service/user.service";
+import { UserService } from "src/app/service/user.service";
 import { Router } from "@angular/router";
 
 
@@ -36,7 +36,17 @@ export class SignupComponent implements OnInit {
   // }
   registerForm: FormGroup
 
-  constructor(private apiService: UserService, private router : Router) { }
+  constructor(private userservice: UserService, private router: Router) { }
+  
+  register() {
+    console.log(this.registerForm.value)
+    this.userservice.addUser(this.registerForm.value).subscribe((res) => {
+      console.log("data added ", res) 
+      alert("Registerd succesfully");
+        this.router.navigate(['/login']);
+      })
+
+  }
 
   ngOnInit(): void {
     this.registerForm = new FormGroup({
@@ -53,16 +63,7 @@ export class SignupComponent implements OnInit {
 
       })
   }
-  register()
-  {
-     console.log(this.registerForm.value)
-     this.apiService.createUser(this.registerForm.value).subscribe
-     (data => {
-       alert("Registerd succesfully");
-       this.router.navigate(['/login']);
-      })
  
-  }
 
 
 

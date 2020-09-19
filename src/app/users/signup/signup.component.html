@@ -18,7 +18,7 @@
                         class="form-control" 
                         [ngClass]="{'is-invalid': registerForm.get('name').touched && 
                         registerForm.get('name').invalid}"
-                        formControlName="name"
+                        formControlName="name" name="name"
                         >
                     <span class="invalid-feedback">Name is Required</span>
                     </div> 
@@ -29,7 +29,7 @@
                         class="form-control" 
                         [ngClass]="{'is-invalid': registerForm.get('username').touched && 
                         registerForm.get('username').invalid}"
-                        formControlName="username"
+                        formControlName="username" name="username"
                         
                         >
                         <span class="invalid-feedback">Username is Required</span>
@@ -41,7 +41,7 @@
                         class="form-control" 
                         [ngClass]="{'is-invalid': registerForm.get('email').touched && 
                         registerForm.get('email').invalid}"
-                        formControlName="email"
+                        formControlName="email" name="email"
                         
                         >
                         <span *ngIf="registerForm.get('email').touched && registerForm.get('email').invalid" class="invalid-feedback"> 
@@ -56,7 +56,7 @@
                         class="form-control" 
                         [ngClass]="{'is-invalid': registerForm.get('mobileno').touched && 
                         registerForm.get('mobileno').invalid}"
-                        formControlName="mobileno"
+                        formControlName="mobileno" name="mobileno"
                         
                         >
                         <span class="invalid-feedback">Mobile Number is Required</span>
@@ -69,7 +69,7 @@
                         class="form-control" 
                         [ngClass]="{'is-invalid': registerForm.get('password').touched && 
                         registerForm.get('password').invalid}"
-                        formControlName="password"
+                        formControlName="password" name="password"
                         >
                         <span *ngIf="registerForm.get('password').touched && registerForm.get('password').invalid" class="invalid-feedback"> 
                         <div *ngIf="registerForm.get('password').errors.required" >Password is Required</div>
@@ -83,7 +83,7 @@
                         class="form-control" 
                         [ngClass]="{'is-invalid': registerForm.get('confirmpassword').touched && 
                         registerForm.get('confirmpassword').invalid}"
-                        formControlName="confirmpassword"
+                        formControlName="confirmpassword" name="confirmpassword"
                         >
                         <span class="invalid-feedback">Password must Match</span>
                     </div>  

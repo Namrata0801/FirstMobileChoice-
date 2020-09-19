@@ -26,6 +26,15 @@
       "password": "12345678",
       "confirmpassword": "12345678",
       "id": 3
+    },
+    {
+      "name": "swapnil",
+      "username": "swap123",
+      "email": "namratanalawadennn@gmail.com",
+      "mobileno": 2314567890,
+      "password": "12345678",
+      "confirmpassword": "12345678",
+      "id": 4
     }
   ]
 }

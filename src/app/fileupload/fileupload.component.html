@@ -1,0 +1,16 @@
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<div class="container mt-5">
+    <form [formGroup]="form"  ></form>
+    <div>
+        <input type="file" name="image" id="image" class="form-control" (change)="onFileSelect($event)">
+    </div>
+    <br>
+    <div>
+        <button type="submit" name="submit" class="btn btn-primary" routerLink="/displayingimg">Upload img</button>
+        <button type="reset" name="reset" class="btn btn-primary">Clear</button>
+    </div>
+
+</div>
